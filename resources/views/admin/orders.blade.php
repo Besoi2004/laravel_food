@@ -211,7 +211,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $order->order_code }}</td>
                                             <td>{{ $order->customer_name }}</td>
-                                            <td>{{ number_format($order->total_price, 0, ',', '.') }}đ</td>
+                                            <td>{{ number_format($order->total_from_details, 0, ',', '.') }}đ</td>
                                             <td>
                                                 @php
                                                     $statusMapping = [

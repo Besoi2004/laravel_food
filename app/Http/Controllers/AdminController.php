@@ -113,9 +113,8 @@ namespace App\Http\Controllers;
 
     public function orders(Request $request)
     {
-        $query = Order::query();
+        $query = Order::with('orderDetails'); // Thêm eager loading
     
-        // Search by order code or customer name
         if ($request->filled('search')) {
             $search = $request->get('search');
             $query->where(function($q) use ($search) {
@@ -124,12 +123,11 @@ namespace App\Http\Controllers;
             });
         }
     
-        // Filter by status
         if ($request->filled('status') && $request->status !== '') {
             $query->where('status', $request->status);
         }
     
-        $orders = $query->latest()->paginate(10);
+        $orders = $query->latest()->get();
         return view('admin.orders', compact('orders'));
     }
 
@@ -243,6 +241,12 @@ namespace App\Http\Controllers;
     
         $orderDetails = $query->latest()->get();
         return view('admin.order-details', compact('orderDetails'));
+    }
+    public function getTotalFromDetailsAttribute()
+    {
+        return $this->orderDetails->sum(function($detail) {
+            return $detail->price * $detail->quantity;
+        });
     }
 
     public function showOrderDetail($id)
