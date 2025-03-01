@@ -1,0 +1,15 @@
+{
+    "name": "Laravel Development",
+    "image": "mcr.microsoft.com/devcontainers/php:8.2",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {},
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "forwardPorts": [8000, 3306],
+    "postCreateCommand": "composer install && npm install && npm run dev",
+    "customizations": {
+      "vscode": {
+        "extensions": ["bmewburn.vscode-intelephense-client", "esbenp.prettier-vscode"]
+      }
+    }
+  }
