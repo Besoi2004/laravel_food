@@ -81,10 +81,6 @@
                     <input type="text" name="customer_name" class="form-control" value="{{ old('customer_name') }}" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Order Date</label>
-                    <input type="datetime-local" name="order_date" class="form-control" value="{{ old('order_date') }}" required>
-                </div>
-                <div class="mb-3">
                     <label class="form-label">Total Price</label>
                     <input type="number" step="0.01" name="total_price" class="form-control" value="{{ old('total_price') }}" required>
                 </div>

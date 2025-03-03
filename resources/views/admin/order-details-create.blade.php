@@ -77,7 +77,7 @@
                                             <option value="">Select Menu Item</option>
                                             @foreach($menus as $menu)
                                                 <option value="{{ $menu->id }}" data-price="{{ $menu->price }}">
-                                                    {{ $menu->name }} - ${{ number_format($menu->price, 2) }}
+                                                    {{ $menu->name }} - {{ number_format($menu->price,  0, ',', '.') }}đ
                                                 </option>
                                             @endforeach
                                         </select>
