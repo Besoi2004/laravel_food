@@ -5,7 +5,12 @@ Hệ thống quản lý nhà hàng được xây dựng bằng Laravel Framework
 
 ## Tính năng chính
 
-### 1. Quản lý Menu
+### 1. Dashboard Admin
+- Thống kê doanh thu
+- Báo cáo đơn hàng
+- Quản lý người dùng
+
+### 2. Quản lý Menu (Menu)
 - Thêm, sửa, xóa món ăn
 - Phân loại theo danh mục:
   - Món chính (Main Dish)
@@ -15,21 +20,27 @@ Hệ thống quản lý nhà hàng được xây dựng bằng Laravel Framework
 - Tìm kiếm món ăn nâng cao
 - Quản lý giá và mô tả
 
-### 2. Quản lý Đơn Hàng
+### 3. Quản lý Đơn Hàng (Order)
 - Theo dõi đơn hàng theo thời gian thực
-- Xử lý đơn hàng
+- Thêm, sửa, xóa đơn hàng
+- Xử lý đơn hàng:
+  - Đang chờ xử lý (Pending)
+  - Hoàn thành (Completed)
+  - Hủy (Cancelled)
 - Lịch sử đơn hàng
-- Chi tiết đơn hàng
 
-### 3. Dashboard Admin
-- Thống kê doanh thu
-- Báo cáo đơn hàng
-- Quản lý người dùng
+### 4. Quản lý Chi tiết Đơn Hàng (Order Detail)
+- Thêm, sửa, xóa chi tiết đơn hàng
+- Tidm kiếm
 
-### 4. Bảo Mật
+### 5. Bảo Mật
 - Hệ thống đăng nhập an toàn
 - Phân quyền admin
 - Bảo vệ thông tin khách hàng
+
+## Sơ đồ chức năng
+![image](https://github.com/user-attachments/assets/a4ad0d98-6392-4f60-89ad-bb37dcfc6699)
+
 
 ## Công nghệ sử dụng
 - Laravel 9.x
