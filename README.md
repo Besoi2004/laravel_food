@@ -68,14 +68,9 @@ laravel_food/
 ```
 
 ## Nhóm phát triển
-- Quản lý dự án: [Tên của bạn]
-- Frontend Developer: [Tên thành viên]
-- Backend Developer: [Tên thành viên]
+- Quản lý dự án: [Quản lý nhà hàng]
+- Developer: [Nguyễn Huy Tấn]
 
 ## Liên hệ
-- Email: [email]
-- Website: [website]
-- Điện thoại: [số điện thoại]
+- Email: [22010078@st.phenikaa-uni.edu.vn]
 
-## Bản quyền
-© 2025 [Tên công ty/tổ chức]. All rights reserved.
